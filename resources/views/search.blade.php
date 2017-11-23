@@ -30,7 +30,7 @@
             <div class="row col-md-12 mt-5">
                 <form class="col-lg-6 col-10 offset-lg-3 offset-1" action="{{route('search')}}">
                     <div class="input-group">
-                        <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Search" aria-label="Product name">
+                        <input value="{{ $_GET['q'] }}" type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Search" aria-label="Product name">
                         <span class="input-group-btn">
                             <button class="btn btn-primary" type="submit">Search</button>
                         </span>
